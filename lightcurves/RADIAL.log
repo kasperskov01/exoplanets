@@ -1,0 +1,45 @@
+--2020-09-16 08:41:41--  http://exoplanetarchive.ipac.caltech.edu/data/ExoData/0000/0000522/data/UID_0000522_RVC_001.tbl
+Løser exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.151
+Tilslutter exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.151|:80... forbundet.
+HTTP forespørgsel sendt, afventer svar... 302 Found
+Sted: https://exoplanetarchive.ipac.caltech.edu/data/ExoData/0000/0000522/data/UID_0000522_RVC_001.tbl [omdirigeret]
+--2020-09-16 08:41:42--  https://exoplanetarchive.ipac.caltech.edu/data/ExoData/0000/0000522/data/UID_0000522_RVC_001.tbl
+Tilslutter exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.151|:443... forbundet.
+HTTP forespørgsel sendt, afventer svar... 200 OK
+Længde: 4851 (4,7K)
+Gemmer til: 'UID_0000522_RVC_001.tbl'
+
+     0K ....                                                  100% 46,7M=0s
+
+2020-09-16 08:41:42 (46,7 MB/s) - 'UID_0000522_RVC_001.tbl' gemt [4851/4851]
+
+--2020-09-16 15:35:02--  http://exoplanetarchive.ipac.caltech.edu/data/ExoData/0302/0302540/data/UID_0302540_RVC_001.tbl
+Løser exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.151
+Tilslutter exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.151|:80... forbundet.
+HTTP forespørgsel sendt, afventer svar... 302 Found
+Sted: https://exoplanetarchive.ipac.caltech.edu/data/ExoData/0302/0302540/data/UID_0302540_RVC_001.tbl [omdirigeret]
+--2020-09-16 15:35:02--  https://exoplanetarchive.ipac.caltech.edu/data/ExoData/0302/0302540/data/UID_0302540_RVC_001.tbl
+Tilslutter exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.151|:443... forbundet.
+HTTP forespørgsel sendt, afventer svar... 200 OK
+Længde: 2849 (2,8K)
+Gemmer til: 'UID_0302540_RVC_001.tbl'
+
+     0K ..                                                    100% 28,9M=0s
+
+2020-09-16 15:35:03 (28,9 MB/s) - 'UID_0302540_RVC_001.tbl' gemt [2849/2849]
+
+--2020-09-16 15:54:01--  http://exoplanetarchive.ipac.caltech.edu/data/ExoData/0003/0003093/data/UID_0003093_RVC_008.tbl
+Løser exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.151
+Tilslutter exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.151|:80... forbundet.
+HTTP forespørgsel sendt, afventer svar... 302 Found
+Sted: https://exoplanetarchive.ipac.caltech.edu/data/ExoData/0003/0003093/data/UID_0003093_RVC_008.tbl [omdirigeret]
+--2020-09-16 15:54:02--  https://exoplanetarchive.ipac.caltech.edu/data/ExoData/0003/0003093/data/UID_0003093_RVC_008.tbl
+Tilslutter exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.151|:443... forbundet.
+HTTP forespørgsel sendt, afventer svar... 200 OK
+Længde: 4112 (4,0K)
+Gemmer til: 'UID_0003093_RVC_008.tbl'
+
+     0K ....                                                  100% 42,2M=0s
+
+2020-09-16 15:54:02 (42,2 MB/s) - 'UID_0003093_RVC_008.tbl' gemt [4112/4112]
+
