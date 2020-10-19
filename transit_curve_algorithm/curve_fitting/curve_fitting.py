@@ -11,14 +11,12 @@ import math as Math
 import matplotlib.pyplot as plt
 plt.style.use('seaborn-whitegrid')
 
-# plt.rcParams["figure.figsize"] = (20, 10)
-
 # Symbols used
 j, k, n, v, x, y, a = sym.symbols('j k n v x y a')
 
 
 def calc_R2(model, x_points, y_points):  # Calculate R^2
-    model = model.subs(x, sym.Indexed(x, k))
+    model = model.subs(x, sym.Indexed(x, k))    
     R2_model = sym.sqrt(1/len(x_points)*sym.Sum(((model) -
                                                  sym.Indexed(y, k))**2, (k, 0, len(x_points) - 1)))
     f_R2 = sym.lambdify((x, y), R2_model)
@@ -56,8 +54,7 @@ def fit_model(str_model, x_points, y_points):  # Fit a model to a dataset of (x,
     solved_eqs = []  # List of partially solved equations
     # to_display("Starting now", "debug")
     for var_num in free_vars_indices:
-        print(var_num)  # Print this iteration number
-
+        print("v_" + str(var_num))  # Print this iteration number
         eq = E.diff(sym.Indexed(v, var_num))  # Find the derivative
         # Lambdify the newly created equation
         f = sym.lambdify((x, y, *free_vars), eq)
@@ -68,7 +65,7 @@ def fit_model(str_model, x_points, y_points):  # Fit a model to a dataset of (x,
 
     # Solve all the equations for all the free variables
     solved = sym.solve((solved_eqs), (free_vars),
-                       simplify=False, rational=False)
+                       simplify=False)    
 
     # Create list of evenly distibuted x-points
     x_list = np.linspace(np.min(x_points) - 1, np.max(x_points) + 1, 10000)
@@ -104,16 +101,14 @@ def fit_model(str_model, x_points, y_points):  # Fit a model to a dataset of (x,
     ax = fig.add_axes([0, 0, 1, 1])
     fig = ax.set_xlim((np.min(x_points) - 0.02, np.max(x_points) + 0.02))
     fig = ax.set_ylim((np.min(y_points) - 0.02, np.max(y_points) + 0.02))
-
-    # Display figure
-    fig = ax.scatter(x_points, y_points, color='black')
-    fig = ax.plot(x_list, y_list)
-    plt.show()
-    return [x_list, y_list]
-
+    
     # R^2
     print("R^2:")
     print(calc_R2(solved_model_eval, x_points, y_points), "R2")
+
+    # Return model
+    return(x_list, y_list)
+
 
 
 # Generate a taylor polynomium
